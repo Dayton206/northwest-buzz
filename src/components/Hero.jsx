@@ -58,13 +58,15 @@ export default function Hero() {
                         transition={{ delay: 0.8 }}
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                     >
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-brand-blue hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg shadow-brand-blue/20"
-                        >
-                            Work With Will
-                        </motion.button>
+                        <a href="https://cal.com/will-flynn/free-consultation" target="_blank" rel="noopener noreferrer">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-brand-blue hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg shadow-brand-blue/20"
+                            >
+                                Work With Will
+                            </motion.button>
+                        </a>
 
                         <a href="https://youtube.com/shorts/W4K2imSwDvQ?feature=share" target="_blank" rel="noopener noreferrer">
                             <motion.button

@@ -13,7 +13,7 @@ You need your code in a repository to deploy it easily.
    git add .
    git commit -m "Initial launch"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/northwest-buzz.git
+   git remote add origin https://github.com/Dayton206/northwest-buzz.git
    git push -u origin main
    ```
    *(Replace `YOUR_USERNAME` with your actual GitHub username)*
