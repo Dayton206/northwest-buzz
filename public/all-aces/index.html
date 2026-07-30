@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#DAD9D4}
+  body{font-family:"Archivo","Helvetica Neue",Arial,sans-serif;color:#16181A;-webkit-font-smoothing:antialiased}
+  a{color:#16181A;text-decoration:none}
+  a:hover{color:#A8121B}
+  ::selection{background:rgba(168,18,27,.18)}
+  :focus-visible{outline:2px solid #A8121B;outline-offset:3px}
+  @keyframes aa-cue{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(7px);opacity:1}}
+</style>
+</helmet>
+
+<div style="background:#DAD9D4;color:#16181A;font-family:'Archivo',Helvetica,Arial,sans-serif;font-size:17px;line-height:1.62;overflow-x:clip;background-image:radial-gradient(circle at 12% 22%, rgba(22,24,26,.10) .8px, transparent 1px),radial-gradient(circle at 68% 8%, rgba(22,24,26,.07) 1.1px, transparent 1.4px),radial-gradient(circle at 34% 71%, rgba(255,255,255,.55) 1px, transparent 1.3px),radial-gradient(circle at 88% 54%, rgba(22,24,26,.06) .9px, transparent 1.2px);background-size:37px 37px,53px 53px,43px 43px,61px 61px">
+
+  <!-- ============ MASTHEAD ============ -->
+  <header style="position:sticky;top:0;z-index:80;background:rgba(218,217,212,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(22,24,26,.42)">
+    <div style="max-width:1180px;margin:0 auto;padding:13px clamp(20px,5vw,80px);display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase">All Aces Concrete Coatings</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#7C8085">Visibility Audit &middot; 29 Jul 2026</span>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section data-screen-label="Hero" style="position:relative;min-height:100svh;overflow:hidden;background:#0E0F10">
+    <div data-hero-bg style="position:absolute;inset:-8% 0 -8% 0;background-image:url('uploads/Concrete-Coating-Garage-Porsche-and-BMW-2.jpg');background-size:cover;background-position:50% 60%;will-change:transform;filter:saturate(.72) contrast(1.04)"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,11,12,.86) 0%, rgba(10,11,12,.42) 38%, rgba(10,11,12,.80) 100%)"></div>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;justify-content:space-between;gap:clamp(28px,6vh,80px);min-height:100svh;width:100%;max-width:1180px;margin:0 auto;padding:clamp(76px,11vh,140px) clamp(20px,5vw,80px) clamp(22px,4vh,54px)">
+      <div data-hero-inner style="will-change:transform">
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(228,226,220,.62);margin:0 0 20px">Prepared for Bo Dodson &middot; Confidential</p>
+        <h1 style="font-family:'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:800;font-size:clamp(46px,9.6vw,132px);line-height:.9;letter-spacing:-.01em;text-transform:uppercase;margin:0;max-width:15ch;color:#F4F2ED">All Aces <span style="color:rgba(244,242,237,.44)">Concrete Coatings.</span></h1>
+        <p style="margin:26px 0 0;max-width:52ch;font-size:clamp(17px,1.9vw,21px);line-height:1.5;color:rgba(228,226,220,.84)">Audit, Presentation, and Introduction</p>
+        <p style="margin:14px 0 0;max-width:52ch;font-size:clamp(17px,1.9vw,21px);line-height:1.5;color:rgba(228,226,220,.6)">This is what All Aces looks like online right now, stripped back, before anybody sells you a layer of anything.</p>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;border-top:1px solid rgba(228,226,220,.22);padding-top:20px">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.95;color:rgba(228,226,220,.62);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px 42px;flex:1 1 460px">
+          <div><span style="color:#F4F2ED;font-weight:600">Prepared by</span><br>Will Flynn<br>Northwest Buzz Media</div>
+          <div><span style="color:#F4F2ED;font-weight:600">Sources</span><br>Meta Ad Library<br>Google Ads Transparency<br>Public IG + Facebook<br>Crawl of the live site</div>
+          <div><span style="color:#F4F2ED;font-weight:600">Access used</span><br>None. All of it is public.</div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(228,226,220,.5);display:flex;align-items:center;gap:10px">
+          <span>Scroll</span>
+          <span style="display:inline-block;animation:aa-cue 1.8s ease-in-out infinite">&darr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOUR NUMBERS ============ -->
+  <section data-screen-label="Four numbers" style="padding:clamp(56px,8vw,104px) 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="margin-bottom:clamp(30px,4.5vw,52px);max-width:60ch">
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#7C8085;margin:0 0 16px">The short version</p>
+        <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(32px,5.6vw,66px);line-height:.92;text-transform:uppercase;margin:0">Four numbers</h2>
+        <p style="margin:18px 0 0;font-size:clamp(18px,2.1vw,23px);line-height:1.5;color:#4E5257">You are spending real money and real filming time. The problem is not effort. The problem is that almost none of it lands somewhere you own, and a chunk of it is pointed at the wrong map.</p>
+      </div>
+      <div data-rv style="display:flex;flex-wrap:wrap;gap:1px;background:rgba(22,24,26,.42);border:1px solid rgba(22,24,26,.42)">
+        <div style="background:#E6E5E1;padding:26px 22px 28px;flex:1 1 240px">
+          <span data-count data-to="14" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(44px,5.5vw,62px);line-height:.86;display:block;font-feature-settings:'tnum'">14</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#7C8085;margin-top:12px;display:block">Active Meta ads</span>
+          <p style="font-size:14.5px;line-height:1.45;margin:9px 0 0;color:#4E5257">Running as of 29 July. Two flights, 17 May and 9 July. Someone is working.</p>
+        </div>
+        <div style="background:#E6E5E1;padding:26px 22px 28px;flex:1 1 240px">
+          <span data-count data-to="6" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(44px,5.5vw,62px);line-height:.86;display:block;color:#A8121B;font-feature-settings:'tnum'">6</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#7C8085;margin-top:12px;display:block">Share identical copy</span>
+          <p style="font-size:14.5px;line-height:1.45;margin:9px 0 0;color:#4E5257">Six of the fourteen open with the same paragraph, word for word. They compete against each other.</p>
+        </div>
+        <div style="background:#E6E5E1;padding:26px 22px 28px;flex:1 1 240px">
+          <span data-count data-to="2" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(44px,5.5vw,62px);line-height:.86;display:block;color:#A8121B;font-feature-settings:'tnum'">2</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#7C8085;margin-top:12px;display:block">Google ads total</span>
+          <p style="font-size:14.5px;line-height:1.45;margin:9px 0 0;color:#4E5257">Fourteen ads interrupting people, two ads catching people already searching to buy.</p>
+        </div>
+        <div style="background:#E6E5E1;padding:26px 22px 28px;flex:1 1 240px">
+          <span data-count data-to="0" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(44px,5.5vw,62px);line-height:.86;display:block;color:#A8121B;font-feature-settings:'tnum'">0</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#7C8085;margin-top:12px;display:block">City pages on the site</span>
+          <p style="font-size:14.5px;line-height:1.45;margin:9px 0 0;color:#4E5257">You name three counties on the homepage and have no page for a single town inside them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDING 1: THE MAP ============ -->
+  <section data-screen-label="Finding 01 map" style="padding:0 0 clamp(50px,7vw,92px)">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="border-top:1px solid rgba(22,24,26,.42);padding-top:clamp(28px,4vw,46px);display:grid;gap:34px;grid-template-columns:1fr">
+        <div style="display:flex;gap:18px;align-items:baseline;flex-wrap:wrap">
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,6vw,86px);line-height:.8;color:rgba(22,24,26,.2);font-feature-settings:'tnum'">01</span>
+          <div>
+            <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085;margin:0 0 8px">Meta Ad Library &middot; Facebook page &middot; site homepage</p>
+            <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,42px);line-height:1;text-transform:uppercase;margin:0;max-width:26ch">Three of your own channels name three different service areas</h3>
+          </div>
+        </div>
+        <div style="display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+          <div>
+            <p style="margin:0 0 1em">This is the biggest thing in the audit and it has nothing to do with SEO. Your paid ads talk to Seattle. Your Facebook page says Seattle. Your website map says the counties north of Seattle. Your phone number is a 206.</p>
+            <p style="margin:0 0 1em">One of those is right and the others are costing you money. I do not know which, and that is the first question I want to ask you, because everything downstream depends on the answer.</p>
+            <p style="margin:0">If you really work Snohomish, Skagit and Island, then every Seattle impression you have paid for since 17 May was aimed at somebody you cannot serve. If you really work Seattle, your website is turning away the exact buyers your ads just paid to warm up.</p>
+            <div style="margin-top:22px;padding:15px 17px;background:rgba(168,18,27,.09);border-left:3px solid #A8121B;font-size:15px;line-height:1.5">
+              <b style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#A8121B;display:block;margin-bottom:5px;font-weight:600">What it costs</b>
+              Wasted spend on out of area leads, plus a relevance problem. Google decides which towns to show you in partly by which towns you talk about. Right now you tell it two different stories.
+            </div>
+          </div>
+          <div style="display:grid;gap:1px;background:rgba(22,24,26,.42);border:1px solid rgba(22,24,26,.42);align-content:start">
+            <div style="background:#E6E5E1;padding:18px 20px">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7C8085">Meta ads, 14 of 14</div>
+              <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:clamp(20px,2.4vw,26px);line-height:1.04;margin-top:9px;text-transform:uppercase;color:#A8121B">&ldquo;Seattle homeowners&rdquo;</div>
+              <p style="font-size:14.5px;color:#4E5257;margin:9px 0 0;line-height:1.45">One ad: installing coatings in Seattle for over nine years. Another: a local Seattle crew.</p>
+            </div>
+            <div style="background:#E6E5E1;padding:18px 20px">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7C8085">Facebook page, about</div>
+              <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:clamp(20px,2.4vw,26px);line-height:1.04;margin-top:9px;text-transform:uppercase;color:#A8121B">Seattle and surrounding areas</div>
+              <p style="font-size:14.5px;color:#4E5257;margin:9px 0 0;line-height:1.45">Listed alongside a 206 number, which reads Seattle to a customer and to Google.</p>
+            </div>
+            <div style="background:#E6E5E1;padding:18px 20px">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7C8085">Website homepage</div>
+              <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:clamp(20px,2.4vw,26px);line-height:1.04;margin-top:9px;text-transform:uppercase;color:#1D3A33">Snohomish, Skagit &amp; Island counties</div>
+              <p style="font-size:14.5px;color:#4E5257;margin:9px 0 0;line-height:1.45">Stated under a map graphic. Zero overlap with King County, where the ads are pointed.</p>
+            </div>
+          </div>
+        </div>
+
+        <figure data-rv style="margin:6px 0 0">
+          <div style="border:1px solid rgba(22,24,26,.42);background:#E6E5E1;padding:12px">
+            <img src="assets/ex-fb-about.png" alt="Facebook page about section" style="display:block;width:100%;height:auto;filter:saturate(.9)">
+          </div>
+          <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:10px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between">
+            <span>Exhibit A &middot; Facebook page, about section</span>
+            <span>Captured 29 Jul 2026</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDING 2: DUPLICATE CREATIVE (scroll marquee) ============ -->
+  <section data-screen-label="Finding 02 duplicate creative" style="background:#16181A;color:#DEDCD6;padding:clamp(54px,8vw,100px) 0 clamp(40px,6vw,72px)">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;margin-bottom:26px">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,6vw,86px);line-height:.8;color:rgba(222,220,214,.24);font-feature-settings:'tnum'">02</span>
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(222,220,214,.5);margin:0 0 8px">Meta Ad Library &middot; 14 active ads &middot; flights 17 May + 9 Jul</p>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,42px);line-height:1;text-transform:uppercase;margin:0;max-width:28ch;color:#fff">Six ads are running the same paragraph against each other</h3>
+        </div>
+      </div>
+      <p data-rv style="max-width:62ch;font-size:clamp(16.5px,1.8vw,19px);line-height:1.55;color:rgba(222,220,214,.8);margin:0">These six all open with the identical block about grinding every slab to bare concrete and not being a franchise chasing volume. It is good copy. That is the problem. It is good copy submitted six times, so Meta splits your budget and your learning phase across six near-identical assets instead of finding one winner.</p>
+    </div>
+
+    <div data-marquee-wrap style="margin:clamp(30px,5vw,52px) 0 0;overflow:hidden;padding:4px 0">
+      <div data-marquee style="display:flex;gap:14px;will-change:transform;padding:0 clamp(20px,5vw,80px)">
+        <figure data-dupe="1" style="margin:0;flex:0 0 200px"><div style="border:1px solid #A8121B;background:#E6E5E1;padding:7px"><img src="assets/ad-01.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#A8121B;margin-top:8px">Duplicate copy</figcaption></figure>
+        <figure style="margin:0;flex:0 0 200px"><div style="border:1px solid rgba(222,220,214,.3);background:#E6E5E1;padding:7px"><img src="assets/ad-02.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(222,220,214,.45);margin-top:8px">Unique</figcaption></figure>
+        <figure data-dupe="1" style="margin:0;flex:0 0 200px"><div style="border:1px solid #A8121B;background:#E6E5E1;padding:7px"><img src="assets/ad-03.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#A8121B;margin-top:8px">Duplicate copy</figcaption></figure>
+        <figure data-dupe="1" style="margin:0;flex:0 0 200px"><div style="border:1px solid #A8121B;background:#E6E5E1;padding:7px"><img src="assets/ad-04.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#A8121B;margin-top:8px">Duplicate copy</figcaption></figure>
+        <figure style="margin:0;flex:0 0 200px"><div style="border:1px solid rgba(222,220,214,.3);background:#E6E5E1;padding:7px"><img src="assets/ad-05.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(222,220,214,.45);margin-top:8px">Unique</figcaption></figure>
+        <figure style="margin:0;flex:0 0 200px"><div style="border:1px solid rgba(222,220,214,.3);background:#E6E5E1;padding:7px"><img src="assets/ad-06.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(222,220,214,.45);margin-top:8px">Unique</figcaption></figure>
+        <figure style="margin:0;flex:0 0 200px"><div style="border:1px solid rgba(222,220,214,.3);background:#E6E5E1;padding:7px"><img src="assets/ad-07.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(222,220,214,.45);margin-top:8px">Unique</figcaption></figure>
+        <figure data-dupe="1" style="margin:0;flex:0 0 200px"><div style="border:1px solid #A8121B;background:#E6E5E1;padding:7px"><img src="assets/ad-08.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#A8121B;margin-top:8px">Duplicate copy</figcaption></figure>
+        <figure style="margin:0;flex:0 0 200px"><div style="border:1px solid rgba(222,220,214,.3);background:#E6E5E1;padding:7px"><img src="assets/ad-09.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(222,220,214,.45);margin-top:8px">Unique</figcaption></figure>
+        <figure data-dupe="1" style="margin:0;flex:0 0 200px"><div style="border:1px solid #A8121B;background:#E6E5E1;padding:7px"><img src="assets/ad-10.png" alt="Meta ad card" style="display:block;width:100%;height:auto"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#A8121B;margin-top:8px">Duplicate copy</figcaption></figure>
+      </div>
+    </div>
+
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,48px) clamp(20px,5vw,80px) 0">
+      <div data-rv style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:rgba(222,220,214,.9)">
+          <thead><tr>
+            <th style="text-align:left;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(222,220,214,.5);padding:0 14px 9px 0;border-bottom:1px solid rgba(222,220,214,.4);white-space:nowrap">Library ID</th>
+            <th style="text-align:left;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(222,220,214,.5);padding:0 14px 9px 0;border-bottom:1px solid rgba(222,220,214,.4);white-space:nowrap">Started</th>
+            <th style="text-align:left;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(222,220,214,.5);padding:0 14px 9px 0;border-bottom:1px solid rgba(222,220,214,.4)">Opening copy</th>
+            <th style="text-align:left;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(222,220,214,.5);padding:0 0 9px 0;border-bottom:1px solid rgba(222,220,214,.4)">Status</th>
+          </tr></thead>
+          <tbody>
+            <tr><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14)">1008834052122452</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);white-space:nowrap">9 Jul 2026</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);color:#E4737B">Grind every slab (duplicate)</td><td style="padding:10px 0;border-bottom:1px solid rgba(222,220,214,.14)">Active</td></tr>
+            <tr><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14)">1937915813738088</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);white-space:nowrap">9 Jul 2026</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);color:#E4737B">Grind every slab (duplicate)</td><td style="padding:10px 0;border-bottom:1px solid rgba(222,220,214,.14)">Active</td></tr>
+            <tr><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14)">1324270703122412</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);white-space:nowrap">9 Jul 2026</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);color:#E4737B">Grind every slab (duplicate)</td><td style="padding:10px 0;border-bottom:1px solid rgba(222,220,214,.14)">Active</td></tr>
+            <tr><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14)">2482136078924379</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);white-space:nowrap">9 Jul 2026</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);color:#E4737B">Grind every slab (duplicate)</td><td style="padding:10px 0;border-bottom:1px solid rgba(222,220,214,.14)">Active</td></tr>
+            <tr><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14)">1240948784707770</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);white-space:nowrap">9 Jul 2026</td><td style="padding:10px 14px 10px 0;border-bottom:1px solid rgba(222,220,214,.14);color:#E4737B">Grind every slab (duplicate)</td><td style="padding:10px 0;border-bottom:1px solid rgba(222,220,214,.14)">Active</td></tr>
+            <tr><td style="padding:10px 14px 10px 0">1023095450589239</td><td style="padding:10px 14px 10px 0;white-space:nowrap">9 Jul 2026</td><td style="padding:10px 14px 10px 0;color:#E4737B">Grind every slab (duplicate)</td><td style="padding:10px 0;color:#E4737B">Active, under 100 impressions</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p data-rv style="margin:18px 0 0;max-width:62ch;color:rgba(222,220,214,.8)">Note the last row. Meta itself has flagged that one as low impression count, under 100. That is Meta telling you it has nothing to learn from an asset it has already seen five other copies of.</p>
+      <div data-rv style="margin-top:22px;padding:15px 17px;background:rgba(168,18,27,.16);border-left:3px solid #A8121B;font-size:15px;line-height:1.5;max-width:70ch">
+        <b style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#E4737B;display:block;margin-bottom:5px;font-weight:600">What it costs</b>
+        Budget fragmentation and a learning phase that never closes. Six ads at a sixth of the data each will always be worse than one ad with all of it.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDING 3: FB.ME ============ -->
+  <section data-screen-label="Finding 03 destination" style="padding:clamp(54px,8vw,100px) 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;margin-bottom:26px">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,6vw,86px);line-height:.8;color:rgba(22,24,26,.2);font-feature-settings:'tnum'">03</span>
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085;margin:0 0 8px">Meta Ad Library &middot; destination shown as FB.ME on every ad</p>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,42px);line-height:1;text-transform:uppercase;margin:0;max-width:26ch">Every ad sends the lead to Facebook, not to anything you own</h3>
+        </div>
+      </div>
+      <div data-rv style="display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <div>
+          <p style="margin:0 0 1em">All fourteen show FB.ME as the destination, which means instant forms inside Facebook. Instant forms are cheap per lead and they are genuinely fine for volume. But three things happen when nothing lands on your site.</p>
+          <p style="margin:0 0 1em">You build no on-site audience to retarget later, so every campaign starts cold again. Your website gets none of the engagement signal that helps it rank. And you never learn what your own pages do to a buyer, because no buyer ever sees one.</p>
+          <p style="margin:0">You have built beautiful proof assets, the hammer test, the stretch test, the stain test, real before and afters, and the people you pay to reach never touch any of it.</p>
+        </div>
+        <div style="align-self:start;padding:15px 17px;background:rgba(168,18,27,.09);border-left:3px solid #A8121B;font-size:15px;line-height:1.5">
+          <b style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#A8121B;display:block;margin-bottom:5px;font-weight:600">What it costs</b>
+          Every dollar of Meta spend evaporates the day you pause it. Nothing accumulates.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDING 4: GOOGLE ============ -->
+  <section data-screen-label="Finding 04 google" style="padding:clamp(50px,7vw,92px) 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="border-top:1px solid rgba(22,24,26,.42);padding-top:clamp(28px,4vw,46px);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;margin-bottom:26px">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,6vw,86px);line-height:.8;color:rgba(22,24,26,.2);font-feature-settings:'tnum'">04</span>
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085;margin:0 0 8px">Google Ads Transparency Center &middot; verified advertiser</p>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,42px);line-height:1;text-transform:uppercase;margin:0;max-width:24ch">Two Google ads against fourteen on Meta</h3>
+        </div>
+      </div>
+      <div data-rv style="display:grid;gap:38px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start">
+        <div>
+          <p style="margin:0 0 1em">You are running one search ad, the Penntek four times stronger than epoxy one with sitelinks, and one display unit. That is it.</p>
+          <p style="margin:0 0 1em">Meta is interruption. You are catching somebody mid-scroll who was not thinking about their garage floor. That works, and your creative is good at it. Google search is the opposite. Somebody typing garage floor coating near me has already decided. They are comparing installers, not discovering the category.</p>
+          <p style="margin:0">Right now you are heavily invested in the part of the funnel where you have to create the want, and barely present in the part where the want already exists.</p>
+          <div data-pending style="border:1px dashed rgba(22,24,26,.42);padding:20px;margin:22px 0 0">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#7C8085">Measurement pending</div>
+            <p style="margin:9px 0 0;font-size:15px;color:#4E5257">Monthly search volume and cost per click for coating terms across your actual service towns. I am pulling this before our call rather than guessing at it, because in a niche this specific the real numbers are often nothing like the assumption.</p>
+          </div>
+          <div style="margin-top:22px;padding:15px 17px;background:rgba(168,18,27,.09);border-left:3px solid #A8121B;font-size:15px;line-height:1.5">
+            <b style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#A8121B;display:block;margin-bottom:5px;font-weight:600">What it costs</b>
+            The highest intent buyer in the category is reaching somebody else's landing page.
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <figure style="margin:0">
+            <div style="border:1px solid rgba(22,24,26,.42);background:#E6E5E1;padding:8px"><img src="assets/ex-g-search.png" alt="Google search ad" style="display:block;width:100%;height:auto"></div>
+            <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#7C8085;margin-top:9px">Exhibit B &middot; search, 1 of 2</figcaption>
+          </figure>
+          <figure style="margin:0">
+            <div style="border:1px solid rgba(22,24,26,.42);background:#E6E5E1;padding:8px"><img src="assets/ex-g-display.png" alt="Google display ad" style="display:block;width:100%;height:auto"></div>
+            <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#7C8085;margin-top:9px">Exhibit C &middot; display, 2 of 2</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDING 5: CITY PAGES ============ -->
+  <section data-screen-label="Finding 05 city pages" style="padding:clamp(50px,7vw,92px) 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="border-top:1px solid rgba(22,24,26,.42);padding-top:clamp(28px,4vw,46px);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;margin-bottom:26px">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,6vw,86px);line-height:.8;color:rgba(22,24,26,.2);font-feature-settings:'tnum'">05</span>
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085;margin:0 0 8px">Site crawl &middot; full nav + footer &middot; 29 Jul 2026</p>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,42px);line-height:1;text-transform:uppercase;margin:0;max-width:24ch">Nine service pages, zero place pages</h3>
+        </div>
+      </div>
+      <div data-rv style="display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <div>
+          <p style="margin:0 0 1em">You have a page for chip, quartz, metallic, solid colour, shop floor, epoxy, Formcove, colours and finishes, and cabinets. That is thorough product coverage and most of your competitors do not have it.</p>
+          <p style="margin:0 0 1em">What you do not have is a single page about a place. No Everett. No Marysville. No Mount Vernon. No Oak Harbor. No Arlington. No Stanwood. Local search is decided on relevance to a place, and the only place signal on your entire site is one line of text under a map image.</p>
+          <p style="margin:0">The nine pages you already wrote are the raw material. They do not need replacing. They need multiplying against the towns you actually drive to.</p>
+        </div>
+        <div>
+          <div style="display:flex;flex-wrap:wrap;gap:1px;background:rgba(22,24,26,.42);border:1px solid rgba(22,24,26,.42)">
+            <div style="background:#E6E5E1;padding:14px 14px 16px;flex:1 1 120px"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085">Service pages</div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:44px;line-height:.9;margin-top:6px;color:#1D3A33;font-feature-settings:'tnum'">9</div></div>
+            <div style="background:#E6E5E1;padding:14px 14px 16px;flex:1 1 120px"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085">Town pages</div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:44px;line-height:.9;margin-top:6px;color:#A8121B;font-feature-settings:'tnum'">0</div></div>
+            <div style="background:#E6E5E1;padding:14px 14px 16px;flex:1 1 120px"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085">Counties claimed</div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:44px;line-height:.9;margin-top:6px;font-feature-settings:'tnum'">3</div></div>
+          </div>
+          <div data-pending style="border:1px dashed rgba(22,24,26,.42);padding:20px;margin:20px 0 0">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#7C8085">Measurement pending</div>
+            <p style="margin:9px 0 0;font-size:15px;color:#4E5257">Your exact map pack position for four buying terms across ten towns in your service area, plus every keyword the domain currently ranks for. This is the before picture. Whatever we do together gets measured against it, in the same tool, on the same terms.</p>
+          </div>
+          <div style="margin-top:20px;padding:15px 17px;background:rgba(168,18,27,.09);border-left:3px solid #A8121B;font-size:15px;line-height:1.5">
+            <b style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#A8121B;display:block;margin-bottom:5px;font-weight:600">What it costs</b>
+            Invisibility in every town you serve except the one you happen to be sitting in.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDING 6: SOCIAL ============ -->
+  <section data-screen-label="Finding 06 social" style="padding:clamp(50px,7vw,92px) 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="border-top:1px solid rgba(22,24,26,.42);padding-top:clamp(28px,4vw,46px);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;margin-bottom:26px">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,6vw,86px);line-height:.8;color:rgba(22,24,26,.2);font-feature-settings:'tnum'">06</span>
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085">Instagram + Facebook &middot; 65 posts &middot; 193 + 173 followers</p>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,42px);line-height:1;text-transform:uppercase;margin:8px 0 0;max-width:26ch">Sixty-five posts averaging around 558 views</h3>
+        </div>
+      </div>
+
+      <figure data-rv style="margin:0 0 26px">
+        <div style="border:1px solid rgba(22,24,26,.42);background:#E6E5E1;padding:12px"><img src="assets/ex-ig-stats.png" alt="Instagram profile" style="display:block;width:100%;height:auto"></div>
+        <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:10px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between"><span>Exhibit D &middot; @all_aces_concrete_coatings_llc</span><span>65 posts &middot; 193 followers</span></figcaption>
+      </figure>
+
+      <div data-rv style="display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start">
+        <div>
+          <p style="margin:0 0 1em">I counted the view number on eighteen consecutive reels. They ran from 320 to 1,039. Total across those eighteen: 10,038. That is an average of roughly 558 views per reel.</p>
+          <p style="margin:0 0 1em">Here is what I want you to hear in that. The content is not the problem. You are filming on site, showing the grinder, showing cracked slabs, showing finished floors, putting your own face in it. That is exactly the right raw material and most contractors will not do it.</p>
+          <p style="margin:0">The problem is that 65 posts have produced 193 followers and around 558 views a piece, which means the work is being made and then dropped into a channel with no distribution system under it. Same footage, structured and published differently, does not do 558.</p>
+          <div style="margin-top:22px;padding:15px 17px;background:rgba(168,18,27,.09);border-left:3px solid #A8121B;font-size:15px;line-height:1.5">
+            <b style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#A8121B;display:block;margin-bottom:5px;font-weight:600">What it costs</b>
+            You are already paying the hard cost, which is filming. You are just not collecting on it.
+          </div>
+        </div>
+        <figure style="margin:0">
+          <div style="border:1px solid rgba(22,24,26,.42);background:#E6E5E1;padding:10px"><img src="assets/ex-ig-reels.png" alt="Instagram reels grid with view counts" style="display:block;width:100%;height:auto"></div>
+          <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:10px">Exhibit E &middot; 18 consecutive reels, 320 to 1,039 views</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDING 7: HYGIENE ============ -->
+  <section data-screen-label="Finding 07 hygiene" style="padding:clamp(50px,7vw,92px) 0 clamp(54px,8vw,100px)">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="border-top:1px solid rgba(22,24,26,.42);padding-top:clamp(28px,4vw,46px);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;margin-bottom:22px">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,6vw,86px);line-height:.8;color:rgba(22,24,26,.2);font-feature-settings:'tnum'">07</span>
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085">Site crawl &middot; WordPress + Divi &middot; built by a third party</p>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,42px);line-height:1;text-transform:uppercase;margin:8px 0 0;max-width:24ch">Six fixable things on the site itself</h3>
+        </div>
+      </div>
+      <p data-rv style="max-width:62ch;margin:0 0 22px">None of these are your fault. This is a vendor-built site and this is what vendor-built sites do. All six are quick.</p>
+      <div data-rv style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:12.5px">
+          <thead><tr>
+            <th style="text-align:left;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7C8085;padding:0 14px 9px 0;border-bottom:1px solid rgba(22,24,26,.42)">Where</th>
+            <th style="text-align:left;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7C8085;padding:0 14px 9px 0;border-bottom:1px solid rgba(22,24,26,.42)">What</th>
+            <th style="text-align:left;font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7C8085;padding:0 0 9px 0;border-bottom:1px solid rgba(22,24,26,.42)">Why it matters</th>
+          </tr></thead>
+          <tbody>
+            <tr><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">Homepage, under the financing banner</td><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5;color:#A8121B">Unedited theme placeholder text is live: &ldquo;Your content goes here. Edit or remove this text inline or in the module Content settings.&rdquo;</td><td style="padding:11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">A buyer about to spend four figures is reading that. Thirty second fix.</td></tr>
+            <tr><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">Footer logo link</td><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5;color:#A8121B">Points to /home/ while the nav points to /</td><td style="padding:11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">Two URLs for one homepage splits its authority in half.</td></tr>
+            <tr><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">Four service pages</td><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5;color:#A8121B">URLs end in -2: quartz, metallic, epoxy, Formcove, solid colour</td><td style="padding:11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">Suggests the originals still exist and are competing with the live versions.</td></tr>
+            <tr><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">Footer menu</td><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5;color:#A8121B">Links to /concrete-coating-finishes/ while nav links to /concrete-coating-colors-finishes/</td><td style="padding:11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">One of those is likely a dead link sitting in your footer on every page.</td></tr>
+            <tr><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">Homepage media</td><td style="padding:11px 14px 11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5;color:#A8121B">Four autoplaying video files, plus separate desktop and mobile headers</td><td style="padding:11px 0;border-bottom:1px solid rgba(22,24,26,.16);vertical-align:top;line-height:1.5">Mobile load time. Most of your traffic is a phone in a driveway.</td></tr>
+            <tr><td style="padding:11px 14px 11px 0;vertical-align:top;line-height:1.5">Contact details</td><td style="padding:11px 14px 11px 0;vertical-align:top;line-height:1.5;color:#A8121B">Two phone numbers (206-472-0543 and an ALT 206-472-6002) and two emails (bo@ and info@)</td><td style="padding:11px 0;vertical-align:top;line-height:1.5">Inconsistent details across listings weaken local ranking and confuse buyers.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- TODO-VERIFY: confirm the Facebook About email typo (caotings) with your own eyes before saying it out loud. -->
+      <div data-rv style="margin-top:22px;padding:15px 17px;background:rgba(29,58,51,.08);border-left:3px solid #1D3A33;font-size:15px;line-height:1.5;max-width:70ch">
+        <b style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#1D3A33;display:block;margin-bottom:5px;font-weight:600">Worth checking together</b>
+        There is one more item I want to look at with you on screen share rather than assert here, because if I am reading it right it means some of your inbound email has never arrived, and if I am reading it wrong I do not want it in a document.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PIVOT ============ -->
+  <section data-screen-label="Pivot" style="background:#1D3A33;color:#DDE3E0;padding:clamp(56px,8vw,104px) 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <p data-rv style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(221,227,224,.55);margin:0 0 16px">What all seven have in common</p>
+      <h2 data-rv style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(32px,5.6vw,66px);line-height:.92;text-transform:uppercase;margin:0;color:#fff;max-width:22ch">Nothing you are doing accumulates</h2>
+      <div style="display:grid;gap:38px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:42px">
+        <div data-rv style="border-top:1px solid rgba(221,227,224,.28);padding-top:18px">
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:700;text-transform:uppercase;font-size:22px;color:#fff;line-height:1.05">Rented</div>
+          <p style="margin:10px 0 0;font-size:15.5px;color:rgba(221,227,224,.78)">Meta ads, instant forms, boosted posts. The day the card stops, the leads stop, and you are back to zero with nothing to show for the spend except a list of names.</p>
+        </div>
+        <div data-rv style="border-top:1px solid rgba(221,227,224,.28);padding-top:18px">
+          <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:700;text-transform:uppercase;font-size:22px;color:#fff;line-height:1.05">Owned</div>
+          <p style="margin:10px 0 0;font-size:15.5px;color:rgba(221,227,224,.78)">Pages on your domain about towns you serve. A profile that ranks in those towns. A library of your own footage indexed and searchable. These keep working on a month you spend nothing.</p>
+        </div>
+      </div>
+      <p data-rv style="margin:40px 0 0;max-width:60ch;font-size:clamp(18px,2.1vw,23px);line-height:1.5;color:rgba(221,227,224,.82)">You have nine years of work, real proof footage, certified installs and a genuine point of view about prep. Almost none of it is parked anywhere permanent. That is the whole opportunity.</p>
+    </div>
+  </section>
+
+  <!-- ============ THE WORK: pinned scroll scenes ============ -->
+  <div data-scenes data-screen-label="The work" style="position:relative;height:320vh;background:#0E0F10">
+    <div style="position:sticky;top:0;height:100vh;overflow:hidden">
+      <div data-scene-img="0" style="position:absolute;inset:0;background-image:url('uploads/Concrete-Coating-Garage-Porsche-and-BMW-2.jpg');background-size:cover;background-position:50% 55%;opacity:1;will-change:opacity,transform;filter:saturate(.8)"></div>
+      <div data-scene-img="1" style="position:absolute;inset:0;background-image:url('uploads/Commercial-Concrete-Coating-Cidery-Grind-and-Clear-2.jpg');background-size:cover;background-position:50% 50%;opacity:0;will-change:opacity,transform;filter:saturate(.8)"></div>
+      <div data-scene-img="2" style="position:absolute;inset:0;background-image:url('uploads/Commercial-Concrete-Arts-Center-3.jpg');background-size:cover;background-position:50% 50%;opacity:0;will-change:opacity,transform;filter:saturate(.8)"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,11,12,.72) 0%, rgba(10,11,12,.18) 42%, rgba(10,11,12,.86) 100%)"></div>
+      <div style="position:absolute;inset:0;max-width:1180px;margin:0 auto;padding:clamp(70px,10vh,120px) clamp(20px,5vw,80px) clamp(34px,6vh,64px);display:flex;flex-direction:column;justify-content:space-between">
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(228,226,220,.6);margin:0 0 18px">What you are actually selling</p>
+          <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(34px,6.4vw,84px);line-height:.92;text-transform:uppercase;margin:0;max-width:20ch;color:#F4F2ED">This is the product. Nobody online ever gets to it.</h2>
+        </div>
+        <div style="position:relative;min-height:150px">
+          <div data-scene-cap="0" style="opacity:1;will-change:opacity;border-top:1px solid rgba(228,226,220,.3);padding-top:16px;max-width:46ch">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(228,226,220,.55)">01 &middot; Residential garage &middot; full chip flake</div>
+            <p style="margin:10px 0 0;font-size:clamp(17px,2vw,22px);line-height:1.42;color:#F4F2ED">A finished floor like this is the whole argument. It is sitting in a Facebook instant form nobody can index, link to, or find in six months.</p>
+          </div>
+          <div data-scene-cap="1" style="opacity:0;will-change:opacity;position:absolute;inset:0;border-top:1px solid rgba(228,226,220,.3);padding-top:16px;max-width:46ch">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(228,226,220,.55)">02 &middot; Commercial cidery &middot; grind and clear</div>
+            <p style="margin:10px 0 0;font-size:clamp(17px,2vw,22px);line-height:1.42;color:#F4F2ED">Commercial work like this is your highest ticket and there is not one page on your site that a commercial buyer could search their way to.</p>
+          </div>
+          <div data-scene-cap="2" style="opacity:0;will-change:opacity;position:absolute;inset:0;border-top:1px solid rgba(228,226,220,.3);padding-top:16px;max-width:46ch">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(228,226,220,.55)">03 &middot; Arts centre &middot; polished floor, public space</div>
+            <p style="margin:10px 0 0;font-size:clamp(17px,2vw,22px);line-height:1.42;color:#F4F2ED">Nine years of this exists. The system below is only about parking it somewhere permanent, in the towns you actually drive to.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ THE SYSTEM ============ -->
+  <!-- TODO-SYSTEM: rewrite these seven cards and three phases in your own words before sending. -->
+  <section data-screen-label="The system" style="padding:clamp(56px,8vw,104px) 0 clamp(40px,6vw,70px)">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="max-width:62ch">
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#7C8085;margin:0 0 16px">The proposal</p>
+        <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(32px,5.6vw,66px);line-height:.92;text-transform:uppercase;margin:0">The omnipresent local content system</h2>
+        <p style="margin:18px 0 0;font-size:clamp(18px,2.1vw,23px);line-height:1.5;color:#4E5257">The name is literal. One filming day on one of your jobs becomes coverage in every place a homeowner in your service area might look, and all of it stays up.</p>
+        <p style="margin:14px 0 0;font-size:clamp(18px,2.1vw,23px);line-height:1.5;color:#4E5257">You are already doing the expensive part. You already film. The system is what happens to the footage after.</p>
+      </div>
+
+      <div data-rv style="text-align:center;margin-top:clamp(36px,5vw,64px)">
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#7C8085;margin:0 0 10px">One job site, one crew, one day</p>
+        <div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(24px,3.4vw,38px);line-height:1">The whole hand comes off one shoot
+          <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:400;letter-spacing:.16em;color:#7C8085;margin-top:9px">Deal the same day seven ways</span>
+        </div>
+      </div>
+
+      <div data-fan style="position:relative;height:440px;margin-top:clamp(24px,4vw,44px);display:none">
+        <div data-card style="--rot:-42deg;position:absolute;left:50%;bottom:0;width:172px;height:252px;margin-left:-86px;background:#E6E5E1;border:1px solid rgba(22,24,26,.42);border-radius:9px;padding:15px 14px;transform-origin:50% 118%;transform:rotate(0deg) translateY(26px);opacity:0;transition:transform .9s cubic-bezier(.22,.9,.24,1),opacity .55s ease,box-shadow .3s ease;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 6px 18px rgba(22,24,26,.1);display:flex;flex-direction:column;justify-content:space-between">
+          <div><span style="font-size:17px;line-height:1">&spades;</span><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;line-height:1;margin-top:9px">Town pages</div><p style="font-size:12.5px;line-height:1.42;color:#4E5257;margin:7px 0 0">A real page per town you drive to, built on the job you filmed there. Not spun copy. The actual slab, the actual street.</p></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#7C8085;text-transform:uppercase">Owned &middot; permanent</div>
+        </div>
+        <div data-card style="--rot:-28deg;position:absolute;left:50%;bottom:0;width:172px;height:252px;margin-left:-86px;background:#E6E5E1;border:1px solid rgba(22,24,26,.42);border-radius:9px;padding:15px 14px;transform-origin:50% 118%;transform:rotate(0deg) translateY(26px);opacity:0;transition:transform .9s cubic-bezier(.22,.9,.24,1),opacity .55s ease,box-shadow .3s ease;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 6px 18px rgba(22,24,26,.1);display:flex;flex-direction:column;justify-content:space-between">
+          <div><span style="font-size:17px;line-height:1;color:#A8121B">&hearts;</span><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;line-height:1;margin-top:9px">Profile posts</div><p style="font-size:12.5px;line-height:1.42;color:#4E5257;margin:7px 0 0">Google Business Profile updates tied to the town and the service, on a schedule, with the photos from that job.</p></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#7C8085;text-transform:uppercase">Owned &middot; ranks locally</div>
+        </div>
+        <div data-card style="--rot:-14deg;position:absolute;left:50%;bottom:0;width:172px;height:252px;margin-left:-86px;background:#E6E5E1;border:1px solid rgba(22,24,26,.42);border-radius:9px;padding:15px 14px;transform-origin:50% 118%;transform:rotate(0deg) translateY(26px);opacity:0;transition:transform .9s cubic-bezier(.22,.9,.24,1),opacity .55s ease,box-shadow .3s ease;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 6px 18px rgba(22,24,26,.1);display:flex;flex-direction:column;justify-content:space-between">
+          <div><span style="font-size:17px;line-height:1">&clubs;</span><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;line-height:1;margin-top:9px">Vertical cuts</div><p style="font-size:12.5px;line-height:1.42;color:#4E5257;margin:7px 0 0">Reels and Shorts cut from the same footage, structured to hold attention past three seconds instead of hoping.</p></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#7C8085;text-transform:uppercase">Reach</div>
+        </div>
+        <div data-card style="--rot:0deg;position:absolute;left:50%;bottom:0;width:172px;height:252px;margin-left:-86px;background:#E6E5E1;border:1px solid rgba(22,24,26,.42);border-radius:9px;padding:15px 14px;transform-origin:50% 118%;transform:rotate(0deg) translateY(26px);opacity:0;transition:transform .9s cubic-bezier(.22,.9,.24,1),opacity .55s ease,box-shadow .3s ease;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 6px 18px rgba(22,24,26,.1);display:flex;flex-direction:column;justify-content:space-between">
+          <div><span style="font-size:17px;line-height:1;color:#A8121B">&diams;</span><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;line-height:1;margin-top:9px">Long form</div><p style="font-size:12.5px;line-height:1.42;color:#4E5257;margin:7px 0 0">The full install as a searchable YouTube video. Coating buyers research for weeks. This is where they do it.</p></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#7C8085;text-transform:uppercase">Owned &middot; compounds</div>
+        </div>
+        <div data-card style="--rot:14deg;position:absolute;left:50%;bottom:0;width:172px;height:252px;margin-left:-86px;background:#E6E5E1;border:1px solid rgba(22,24,26,.42);border-radius:9px;padding:15px 14px;transform-origin:50% 118%;transform:rotate(0deg) translateY(26px);opacity:0;transition:transform .9s cubic-bezier(.22,.9,.24,1),opacity .55s ease,box-shadow .3s ease;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 6px 18px rgba(22,24,26,.1);display:flex;flex-direction:column;justify-content:space-between">
+          <div><span style="font-size:17px;line-height:1">&spades;</span><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;line-height:1;margin-top:9px">Proof library</div><p style="font-size:12.5px;line-height:1.42;color:#4E5257;margin:7px 0 0">Before and afters filed by service and town, so any page or ad can pull the right one instead of the nearest one.</p></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#7C8085;text-transform:uppercase">Owned &middot; reusable</div>
+        </div>
+        <div data-card style="--rot:28deg;position:absolute;left:50%;bottom:0;width:172px;height:252px;margin-left:-86px;background:#E6E5E1;border:1px solid rgba(22,24,26,.42);border-radius:9px;padding:15px 14px;transform-origin:50% 118%;transform:rotate(0deg) translateY(26px);opacity:0;transition:transform .9s cubic-bezier(.22,.9,.24,1),opacity .55s ease,box-shadow .3s ease;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 6px 18px rgba(22,24,26,.1);display:flex;flex-direction:column;justify-content:space-between">
+          <div><span style="font-size:17px;line-height:1;color:#A8121B">&hearts;</span><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;line-height:1;margin-top:9px">Ad creative</div><p style="font-size:12.5px;line-height:1.42;color:#4E5257;margin:7px 0 0">Your best organic cuts become the paid creative, chosen on real view data instead of six copies of one guess.</p></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#7C8085;text-transform:uppercase">Feeds paid</div>
+        </div>
+        <div data-card style="--rot:42deg;position:absolute;left:50%;bottom:0;width:172px;height:252px;margin-left:-86px;background:#E6E5E1;border:1px solid rgba(22,24,26,.42);border-radius:9px;padding:15px 14px;transform-origin:50% 118%;transform:rotate(0deg) translateY(26px);opacity:0;transition:transform .9s cubic-bezier(.22,.9,.24,1),opacity .55s ease,box-shadow .3s ease;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 6px 18px rgba(22,24,26,.1);display:flex;flex-direction:column;justify-content:space-between">
+          <div><span style="font-size:17px;line-height:1">&clubs;</span><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;line-height:1;margin-top:9px">Follow up</div><p style="font-size:12.5px;line-height:1.42;color:#4E5257;margin:7px 0 0">The people who watched and did not call. Sequenced, so a quote request in March is still worth something in July.</p></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#7C8085;text-transform:uppercase">Owned &middot; list</div>
+        </div>
+      </div>
+
+      <div data-stack style="display:grid;gap:1px;background:rgba(22,24,26,.42);border:1px solid rgba(22,24,26,.42);margin-top:clamp(24px,4vw,40px)">
+        <div style="background:#E6E5E1;padding:17px 18px;display:flex;gap:14px;align-items:flex-start"><span style="font-size:17px;line-height:1.3">&spades;</span><div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1">Town pages</div><p style="font-size:14px;color:#4E5257;margin:5px 0 0;line-height:1.45">A real page per town you drive to, built on the job you filmed there. The actual slab, the actual street.</p></div></div>
+        <div style="background:#E6E5E1;padding:17px 18px;display:flex;gap:14px;align-items:flex-start"><span style="font-size:17px;line-height:1.3;color:#A8121B">&hearts;</span><div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1">Profile posts</div><p style="font-size:14px;color:#4E5257;margin:5px 0 0;line-height:1.45">Google Business Profile updates tied to the town and service, on a schedule, using that job's photos.</p></div></div>
+        <div style="background:#E6E5E1;padding:17px 18px;display:flex;gap:14px;align-items:flex-start"><span style="font-size:17px;line-height:1.3">&clubs;</span><div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1">Vertical cuts</div><p style="font-size:14px;color:#4E5257;margin:5px 0 0;line-height:1.45">Reels and Shorts from the same footage, structured to hold attention instead of hoping.</p></div></div>
+        <div style="background:#E6E5E1;padding:17px 18px;display:flex;gap:14px;align-items:flex-start"><span style="font-size:17px;line-height:1.3;color:#A8121B">&diams;</span><div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1">Long form</div><p style="font-size:14px;color:#4E5257;margin:5px 0 0;line-height:1.45">The full install as a searchable YouTube video. Coating buyers research for weeks.</p></div></div>
+        <div style="background:#E6E5E1;padding:17px 18px;display:flex;gap:14px;align-items:flex-start"><span style="font-size:17px;line-height:1.3">&spades;</span><div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1">Proof library</div><p style="font-size:14px;color:#4E5257;margin:5px 0 0;line-height:1.45">Before and afters filed by service and town, so any page or ad pulls the right one.</p></div></div>
+        <div style="background:#E6E5E1;padding:17px 18px;display:flex;gap:14px;align-items:flex-start"><span style="font-size:17px;line-height:1.3;color:#A8121B">&hearts;</span><div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1">Ad creative</div><p style="font-size:14px;color:#4E5257;margin:5px 0 0;line-height:1.45">Your best organic cuts become the paid creative, chosen on real view data.</p></div></div>
+        <div style="background:#E6E5E1;padding:17px 18px;display:flex;gap:14px;align-items:flex-start"><span style="font-size:17px;line-height:1.3">&clubs;</span><div><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1">Follow up</div><p style="font-size:14px;color:#4E5257;margin:5px 0 0;line-height:1.45">The people who watched and did not call, sequenced so an old quote is still worth something.</p></div></div>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:1px;background:rgba(22,24,26,.42);border:1px solid rgba(22,24,26,.42);margin-top:clamp(30px,4vw,48px)">
+        <div data-rv style="background:#E6E5E1;padding:24px 22px 28px;flex:1 1 260px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#1D3A33;font-weight:600">Days 1 to 30</div>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:24px;line-height:1.02;margin:12px 0 10px">Settle the map, fix the leaks</h3>
+          <ul style="margin:0;padding-left:17px;color:#4E5257;font-size:14.5px;line-height:1.5;display:grid;gap:7px">
+            <li>Decide the real service area and make all four channels say it</li>
+            <li>Kill the placeholder text and the duplicate URLs</li>
+            <li>Consolidate to one phone and one email everywhere</li>
+            <li>Cut the six duplicate ads down to the two that earn it</li>
+            <li>Baseline every rank so we can prove movement later</li>
+          </ul>
+        </div>
+        <div data-rv style="background:#E6E5E1;padding:24px 22px 28px;flex:1 1 260px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#1D3A33;font-weight:600">Days 31 to 60</div>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:24px;line-height:1.02;margin:12px 0 10px">Build the owned layer</h3>
+          <ul style="margin:0;padding-left:17px;color:#4E5257;font-size:14.5px;line-height:1.5;display:grid;gap:7px">
+            <li>First filming day on a live job in a priority town</li>
+            <li>Town pages for the highest value towns, built from that footage</li>
+            <li>Profile posting cadence starts and does not stop</li>
+            <li>Ads start landing on your pages, not on Facebook</li>
+            <li>Long form and vertical cuts published from the same shoot</li>
+          </ul>
+        </div>
+        <div data-rv style="background:#E6E5E1;padding:24px 22px 28px;flex:1 1 260px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#1D3A33;font-weight:600">Days 61 to 90</div>
+          <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:24px;line-height:1.02;margin:12px 0 10px">Compound and measure</h3>
+          <ul style="margin:0;padding-left:17px;color:#4E5257;font-size:14.5px;line-height:1.5;display:grid;gap:7px">
+            <li>Second and third filming days, next towns</li>
+            <li>Re-run the same rank report and put it beside the baseline</li>
+            <li>Winning organic cuts promoted into paid</li>
+            <li>Follow up sequence live on everyone who watched</li>
+            <li>Decide together whether it is working, on numbers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF ============ -->
+  <section data-screen-label="Proof" style="padding:clamp(50px,7vw,92px) 0 clamp(56px,8vw,104px)">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <div data-rv style="border-top:1px solid rgba(22,24,26,.42);padding-top:clamp(28px,4vw,46px);max-width:60ch">
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#7C8085;margin:0 0 16px">Proof it works</p>
+        <h2 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(32px,5.6vw,66px);line-height:.92;text-transform:uppercase;margin:0">Elving Electric</h2>
+        <p style="margin:18px 0 0;font-size:clamp(18px,2.1vw,23px);line-height:1.5;color:#4E5257">An electrical contractor in Snohomish County. Same starting point as you, a good operator nobody could find. Same system, run for 90 days.</p>
+      </div>
+      <div data-rv style="border:1px solid rgba(22,24,26,.42);background:#E6E5E1;padding:clamp(22px,4vw,40px);margin-top:clamp(26px,4vw,42px)">
+        <p style="margin:0 0 1em">They came in at 628 views. Not 628 a month. 628 total. Below where your reels sit today.</p>
+        <!-- TODO-PROOF: swap the slot below for your real dashboard screenshots. -->
+        <div style="display:flex;flex-wrap:wrap;gap:1px;background:rgba(22,24,26,.42);border:1px solid rgba(22,24,26,.42);margin-top:24px">
+          <div style="background:#E6E5E1;padding:20px 18px;flex:1 1 180px"><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,4vw,46px);line-height:.9;color:#1D3A33;font-feature-settings:'tnum'">2.5M+</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:10px">Total impressions</div></div>
+          <div style="background:#E6E5E1;padding:20px 18px;flex:1 1 180px"><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,4vw,46px);line-height:.9;color:#1D3A33;font-feature-settings:'tnum'">385K</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:10px">Instagram views</div></div>
+          <div style="background:#E6E5E1;padding:20px 18px;flex:1 1 180px"><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,4vw,46px);line-height:.9;color:#1D3A33;font-feature-settings:'tnum'">380K</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:10px">TikTok views</div></div>
+          <div style="background:#E6E5E1;padding:20px 18px;flex:1 1 180px"><div style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(32px,4vw,46px);line-height:.9;color:#1D3A33;font-feature-settings:'tnum'">374K+</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:10px">YouTube views</div></div>
+        </div>
+        <p style="margin:26px 0 1em">Monetised in under ninety days, which for a contractor is not the point, but it does tell you the distribution was real and not bought.</p>
+        <p style="margin:0">Your raw material is better than theirs was. You have a card-brand people remember, a product with a physical demo, a face people trust on camera, and nine years of finished floors. Elving had a van and a good attitude.</p>
+      </div>
+
+      <!-- ---- receipts ---- -->
+      <div data-rv style="margin-top:clamp(44px,6vw,80px);max-width:60ch">
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#7C8085;margin:0 0 16px">The receipts</p>
+        <h3 style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(28px,4.4vw,54px);line-height:.95;text-transform:uppercase;margin:0">Same system, my account and my clients'</h3>
+        <p style="margin:16px 0 0;font-size:clamp(17px,2vw,21px);line-height:1.5;color:#4E5257">Screenshots, not claims. The numbers I have circled are the only ones that matter here: reach, followers, subscribers. Every one of these accounts started roughly where yours is now.</p>
+      </div>
+
+      <!-- A: my own account -->
+      <div data-rv style="margin-top:clamp(28px,4vw,48px);border-top:1px solid rgba(22,24,26,.42);padding-top:22px">
+        <div style="display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:16px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085">Exhibit F &middot; my own account, @ask.will.flynn</span>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(22px,2.6vw,32px);line-height:1;color:#A8121B;font-feature-settings:'tnum'">8,757 followers on 60 posts</span>
+        </div>
+        <figure style="margin:0">
+          <div style="position:relative;border:1px solid rgba(22,24,26,.42);background:#fff;padding:10px">
+            <img src="assets/pf-ig-stats.png" alt="Instagram profile, 8,757 followers" style="display:block;width:100%;height:auto">
+          </div>
+
+          <div style="margin-top:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#A8121B;font-weight:600;white-space:nowrap">Close-up</span><span style="flex:1 1 240px;max-width:420px;border:2px solid #A8121B;box-shadow:0 0 0 3px rgba(168,18,27,.12);background:#101112;display:block"><img src="assets/chip-ig-followers.png" alt="8,757 followers" style="display:block;width:100%;height:auto"></span></div>
+          <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:9px">60 posts &middot; 8,757 followers &middot; 266 following</figcaption>
+        </figure>
+        <figure style="margin:18px 0 0">
+          <div style="position:relative;border:1px solid rgba(22,24,26,.42);background:#fff;padding:10px">
+            <img src="assets/pf-ig-reels3.png" alt="Three reels with 1.3M, 105K and 35.9K views" style="display:block;width:100%;height:auto">
+          </div>
+
+          <div style="margin-top:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#A8121B;font-weight:600;white-space:nowrap">Close-up</span><span style="flex:1 1 240px;max-width:420px;border:2px solid #A8121B;box-shadow:0 0 0 3px rgba(168,18,27,.12);background:#101112;display:block"><img src="assets/chip-ig-views.png" alt="1.3M, 105K and 35.9K views" style="display:block;width:100%;height:auto"></span></div>
+          <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:9px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between">
+            <span>Top three reels: 1.3M &middot; 105K &middot; 35.9K views</span>
+            <span>Your best reel to date: 1,039</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- B: contractor client -->
+      <div data-rv style="margin-top:clamp(30px,4vw,52px);border-top:1px solid rgba(22,24,26,.42);padding-top:22px">
+        <div style="display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:16px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085">Exhibit G &middot; trades client, same filming approach as yours</span>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(22px,2.6vw,32px);line-height:1;color:#A8121B;font-feature-settings:'tnum'">1.26M views across four cuts</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:14px">
+          <figure style="margin:0;flex:1 1 150px;max-width:230px">
+            <div style="border:1px solid rgba(22,24,26,.42);background:#101112;padding:8px"><img src="assets/pf-reel-1.png" alt="Reel with 311K views" style="display:block;width:100%;height:auto"></div>
+            <figcaption style="margin-top:9px;display:flex;align-items:baseline;gap:8px"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;line-height:1;color:#A8121B;font-feature-settings:'tnum'">311K</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085">views</span></figcaption>
+          </figure>
+          <figure style="margin:0;flex:1 1 150px;max-width:230px">
+            <div style="border:1px solid rgba(22,24,26,.42);background:#101112;padding:8px"><img src="assets/pf-reel-2.png" alt="Reel with 115K views" style="display:block;width:100%;height:auto"></div>
+            <figcaption style="margin-top:9px;display:flex;align-items:baseline;gap:8px"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;line-height:1;color:#A8121B;font-feature-settings:'tnum'">115K</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085">views</span></figcaption>
+          </figure>
+          <figure style="margin:0;flex:1 1 150px;max-width:230px">
+            <div style="border:1px solid rgba(22,24,26,.42);background:#101112;padding:8px"><img src="assets/pf-reel-3.png" alt="Reel with 361K views" style="display:block;width:100%;height:auto"></div>
+            <figcaption style="margin-top:9px;display:flex;align-items:baseline;gap:8px"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;line-height:1;color:#A8121B;font-feature-settings:'tnum'">361K</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085">views</span></figcaption>
+          </figure>
+          <figure style="margin:0;flex:1 1 150px;max-width:230px">
+            <div style="border:1px solid rgba(22,24,26,.42);background:#101112;padding:8px"><img src="assets/pf-reel-4.png" alt="Reel with 473K views" style="display:block;width:100%;height:auto"></div>
+            <figcaption style="margin-top:9px;display:flex;align-items:baseline;gap:8px"><span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:30px;line-height:1;color:#A8121B;font-feature-settings:'tnum'">473K</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085">views</span></figcaption>
+          </figure>
+        </div>
+        <p style="margin:16px 0 0;max-width:62ch;font-size:15.5px;color:#4E5257">A guy in a truck and a supply house aisle. No studio, no script, no budget behind it. This is the same footage you are already shooting, cut and published on a system.</p>
+      </div>
+
+      <!-- C: youtube client -->
+      <div data-rv style="margin-top:clamp(30px,4vw,52px);border-top:1px solid rgba(22,24,26,.42);padding-top:22px">
+        <div style="display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:16px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7C8085">Exhibit H &middot; long form, Clubhouse Capital on YouTube</span>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(22px,2.6vw,32px);line-height:1;color:#A8121B;font-feature-settings:'tnum'">3.31K subscribers &middot; 1,673,722 views</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start">
+          <figure style="margin:0;flex:2 1 380px">
+            <div style="position:relative;border:1px solid rgba(22,24,26,.42);background:#101112;padding:10px">
+              <img src="assets/pf-yt-header.png" alt="YouTube channel header, 3.31K subscribers" style="display:block;width:100%;height:auto">
+            </div>
+
+          <div style="margin-top:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#A8121B;font-weight:600;white-space:nowrap">Close-up</span><span style="flex:1 1 240px;max-width:420px;border:2px solid #A8121B;box-shadow:0 0 0 3px rgba(168,18,27,.12);background:#101112;display:block"><img src="assets/chip-yt-subs.png" alt="3.31K subscribers" style="display:block;width:100%;height:auto"></span></div>
+            <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:9px">Channel header &middot; 3.31K subscribers &middot; 450 videos</figcaption>
+          </figure>
+          <figure style="margin:0;flex:1 1 220px;max-width:300px">
+            <div style="position:relative;border:1px solid rgba(22,24,26,.42);background:#101112;padding:10px">
+              <img src="assets/pf-yt-about.png" alt="YouTube about panel, 1,673,722 views" style="display:block;width:100%;height:auto">
+            </div>
+
+          <div style="margin-top:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#A8121B;font-weight:600;white-space:nowrap">Close-up</span><span style="flex:1 1 240px;max-width:420px;border:2px solid #A8121B;box-shadow:0 0 0 3px rgba(168,18,27,.12);background:#101112;display:block"><img src="assets/chip-yt-stats-v2.png" alt="3.31K subscribers, 450 videos, 1,673,722 views" style="display:block;width:100%;height:auto"></span></div>
+            <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7C8085;margin-top:9px">About panel &middot; 1,673,722 lifetime views</figcaption>
+          </figure>
+        </div>
+        <p style="margin:16px 0 0;max-width:62ch;font-size:15.5px;color:#4E5257">Long form is the part nobody in the trades does, and it is where a buyer who researches for three weeks actually lands. 450 videos, 1.67 million views, and every one of them still working today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSE ============ -->
+  <section data-screen-label="Close" style="background:#16181A;color:#DEDCD6;padding:clamp(60px,9vw,120px) 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,80px)">
+      <p data-rv style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(222,220,214,.5);margin:0 0 16px">Next step</p>
+      <h2 data-rv style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(34px,6.4vw,80px);line-height:.92;text-transform:uppercase;margin:0;color:#fff;max-width:20ch">One question first, then a plan</h2>
+      <p data-rv style="margin:24px 0 0;max-width:58ch;font-size:clamp(18px,2.1vw,23px);line-height:1.5;color:rgba(222,220,214,.8)">Before anything else I need to know which map is the real one, Seattle or the northern counties. Everything in this document changes depending on your answer, and I would rather ask you than guess.</p>
+      <p data-rv style="margin:14px 0 0;max-width:58ch;font-size:clamp(18px,2.1vw,23px);line-height:1.5;color:rgba(222,220,214,.6)">Thirty minutes. Bring nothing. I will have the rank data pulled by then and we can look at it together on screen.</p>
+      <div data-rv style="display:flex;flex-wrap:wrap;gap:12px;margin-top:34px">
+        <a data-book href="https://calendly.com/askwillflynn/30min" target="_blank" rel="noopener" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;padding:15px 28px;border:1px solid #fff;color:#16181A;background:#fff;transition:background .18s ease,color .18s ease" style-hover="background:transparent;color:#fff">Book 30 minutes</a>
+        <a data-call href="tel:+14253185829" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;padding:15px 28px;border:1px solid #fff;color:#fff;background:transparent;transition:background .18s ease,color .18s ease" style-hover="background:#fff;color:#16181A">Call or text 425-318-5829</a>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.9;color:rgba(222,220,214,.55);margin-top:38px;padding-top:20px;border-top:1px solid rgba(222,220,214,.2)">
+        Northwest Buzz Media &middot; Will Flynn &middot; 425-318-5829 &middot; calendly.com/askwillflynn/30min<br>
+        Audit compiled 29 July 2026 from public sources. No account access was used or requested.<br>
+        Every figure about All Aces on this page is observed, not estimated. Anything I could not observe is marked as pending.
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;bookingUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;#&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact&quot;},&quot;callHref&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;tel:&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact&quot;},&quot;showPending&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Audit&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const root = this.root || document;
+    const el = (s) => root.querySelector(s);
+    const all = (s) => Array.from(root.querySelectorAll(s));
+    this.reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // props applied to DOM (no template holes, so paint is never blocked)
+    const book = el('[data-book]'), call = el('[data-call]');
+    if (book && this.props.bookingUrl) book.setAttribute('href', this.props.bookingUrl);
+    if (call && this.props.callHref) call.setAttribute('href', this.props.callHref);
+    if (this.props.showPending === false) all('[data-pending]').forEach(p => p.style.display = 'none');
+
+    // fan vs stack
+    const fan = el('[data-fan]'), stack = el('[data-stack]');
+    const layout = () => {
+      const wide = window.innerWidth >= 900;
+      if (fan) fan.style.display = wide ? 'block' : 'none';
+      if (stack) stack.style.display = wide ? 'none' : 'grid';
+    };
+    layout();
+    this._layout = layout;
+    window.addEventListener('resize', layout);
+
+    // reveals
+    const rvs = all('[data-rv]');
+    if (this.reduce || !('IntersectionObserver' in window)) {
+      rvs.forEach(r => { r.style.opacity = '1'; r.style.transform = 'none'; });
+      this.dealFan(true);
+    } else {
+      rvs.forEach(r => {
+        r.style.transition = 'opacity .7s ease, transform .7s cubic-bezier(.22,.9,.24,1)';
+        const rect = r.getBoundingClientRect();
+        if (rect.top > window.innerHeight * 0.92) { r.style.opacity = '0'; r.style.transform = 'translateY(18px)'; }
+      });
+      const io = new IntersectionObserver((es) => {
+        es.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'none';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+      rvs.forEach(r => io.observe(r));
+
+      if (fan) {
+        const fio = new IntersectionObserver((es) => {
+          es.forEach(e => { if (e.isIntersecting) { this.dealFan(false); fio.unobserve(e.target); } });
+        }, { threshold: 0.25 });
+        fio.observe(fan);
+      }
+    }
+
+    // scroll-driven pieces
+    this.heroBg = el('[data-hero-bg]');
+    this.heroInner = el('[data-hero-inner]');
+    this.heroSec = this.heroBg && this.heroBg.parentElement;
+    this.marquee = el('[data-marquee]');
+    this.marqueeWrap = el('[data-marquee-wrap]');
+    this.scenes = el('[data-scenes]');
+    this.sceneImgs = all('[data-scene-img]');
+    this.sceneCaps = all('[data-scene-cap]');
+    this.counted = false;
+    this.ticking = false;
+    this.onScroll = () => {
+      if (this.ticking) return;
+      this.ticking = true;
+      requestAnimationFrame(() => { this.ticking = false; this.frame(); });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    this.frame();
+
+    // counters
+    const nums = all('[data-count]');
+    if (this.reduce || !('IntersectionObserver' in window)) return;
+    const cio = new IntersectionObserver((es) => {
+      es.forEach(e => {
+        if (!e.isIntersecting) return;
+        cio.unobserve(e.target);
+        const to = parseFloat(e.target.getAttribute('data-to')) || 0;
+        const start = performance.now(), dur = 900;
+        const step = (t) => {
+          const p = Math.min(1, (t - start) / dur);
+          const eased = 1 - Math.pow(1 - p, 3);
+          e.target.textContent = String(Math.round(to * eased));
+          if (p < 1) requestAnimationFrame(step);
+        };
+        e.target.textContent = '0';
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.5 });
+    nums.forEach(n => cio.observe(n));
+  }
+
+  dealFan(instant) {
+    const cards = Array.from((this.root || document).querySelectorAll('[data-card]'));
+    cards.forEach((c, i) => {
+      const rot = c.style.getPropertyValue('--rot') || '0deg';
+      if (!instant) c.style.transitionDelay = (i * 95) + 'ms';
+      c.style.opacity = '1';
+      c.style.transform = 'rotate(' + rot + ') translateY(0)';
+    });
+  }
+
+  frame() {
+    const vh = window.innerHeight;
+
+    if (this.heroSec && this.heroBg && !this.reduce) {
+      const r = this.heroSec.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height)));
+      this.heroBg.style.transform = 'translate3d(0,' + (p * 12).toFixed(2) + '%,0) scale(' + (1 + p * 0.08).toFixed(3) + ')';
+      if (this.heroInner) {
+        this.heroInner.style.transform = 'translate3d(0,' + (-p * 60).toFixed(1) + 'px,0)';
+        this.heroInner.style.opacity = String(Math.max(0, 1 - p * 1.35));
+      }
+    }
+
+    if (this.marquee && this.marqueeWrap && !this.reduce) {
+      const r = this.marqueeWrap.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, (vh - r.top) / (vh + r.height)));
+      const drift = Math.min(560, Math.max(180, this.marquee.scrollWidth - this.marqueeWrap.clientWidth));
+      this.marquee.style.transform = 'translate3d(' + (-p * drift).toFixed(1) + 'px,0,0)';
+    }
+
+    if (this.scenes && this.sceneImgs.length) {
+      const r = this.scenes.getBoundingClientRect();
+      const span = Math.max(1, r.height - vh);
+      const p = Math.min(1, Math.max(0, -r.top / span));
+      const t = p * (this.sceneImgs.length - 1);
+      this.sceneImgs.forEach((img, i) => {
+        const o = Math.max(0, Math.min(1, 1 - Math.abs(t - i)));
+        img.style.opacity = String(o);
+        if (!this.reduce) img.style.transform = 'scale(' + (1.06 - Math.min(1, Math.abs(t - i)) * 0.04).toFixed(3) + ')';
+        const cap = this.sceneCaps[i];
+        if (cap) cap.style.opacity = String(o > 0.5 ? 1 : Math.max(0, o * 1.4));
+      });
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+    if (this._layout) window.removeEventListener('resize', this._layout);
+  }
+
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
